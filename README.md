@@ -17,7 +17,7 @@ and lets activate it: `pyenv activate anaconda3-2022.05`
 - Enter the command `python setup.py` and follow the prompts
 - to check if everything is installed correctly type: `python faceswap.py -h'
 
-#creating the necessary folders
+## creating the necessary folders
 - some folders need to be created, i recommend the following structure to make the correct handling of files mre easy:
 1. have a separate folder for the original video as well as for the lipsynced video.(here as an example we will have the original video under the folder name "video-original" and the lipsynced one in "video-lipsynced"
 2. create multiple folders named,"model" , "face-original" , "face-lipsynced" , "timelapse" , "output" in the same location as the "video-original" and "video-lipsynced" folders
