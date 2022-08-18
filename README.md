@@ -3,7 +3,7 @@
 this is installation guide for faceswap on aws ec2 ubuntu  instance.
 
 
-*[original ripository](https://github.com/deepfakes/faceswap.git)*
+*[faceswap ripository](https://github.com/deepfakes/faceswap.git)*
 
 # installation
 
