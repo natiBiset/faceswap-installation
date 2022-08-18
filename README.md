@@ -36,7 +36,7 @@ python faceswap.py train --input-A [location to the face-lipsynced folder] --inp
 - the save-interval will help to save the trained model for each 50 iteration inorder to avoid wasting time and training from scratch incase of any connection issues. 
 - the batch size 32 seems to work best for me , you can try to find anther optimal value
 - you can hit enter when the model is training and the model will be saved and the training will be saved , and it will resume from that stage whenever you continue to train it.
-- the number of iterations that will make the result video look good will depepend on the specific videos , but the longer the model is trained the better.
+- the number of iterations that will make the result video look good will depepend on the specific videos , but **the longer the model is trained the better**. 
 
 # Converting
 
