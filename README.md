@@ -8,7 +8,7 @@ this is installation guide for faceswap on aws ec2 ubuntu  instance.
 # installation
 
 
-- install anaconda as its the prefered method in the oficial ripo for the faceswap tool.
+- install anaconda as its the prefered method in the official ripo for the faceswap tool.
 
 *we use pyenv here*
 
