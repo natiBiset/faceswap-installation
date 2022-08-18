@@ -1,6 +1,8 @@
-# faceswap-installation
+# using faceswap to increase the quality of output from wawv2lip
 
-this is installation guide for facesawp on aws ubuntu ec2 instance.
+this is installation guide for faceswap on aws ec2 ubuntu  instance.
+[original ripository](https://github.com/deepfakes/faceswap.git)
+
 # installation
 
 
