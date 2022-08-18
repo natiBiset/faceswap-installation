@@ -31,4 +31,20 @@ and lets activate it: `pyenv activate anaconda3-2022.05`
 
 - train the faceswap model with the following command:
 ```
-python faceswap.py train --input-A [location to the face-lipsynced folder] --input-B [location to the face-original folder] --model-dir [location to the model folder we have created --timelapse-input-A [location to the face-lipsynced folder] --timelapse-input-B [location to the face-original folder] --timelapse-output [location to the timelapse folder we have created --batch-size 32 --save-interval 50```
+python faceswap.py train --input-A [location to the face-lipsynced folder] --input-B [location to the face-original folder] --model-dir [location to the model folder we have created --timelapse-input-A [location to the face-lipsynced folder] --timelapse-input-B [location to the face-original folder] --timelapse-output [location to the timelapse folder we have created --batch-size 32 --save-interval 50
+```
+- the save-interval will help to save the trained model for each 50 iteration inorder to avoid wasting time and training from scratch incase of any connection issues. 
+- the batch size 32 seems to work best for me , you can try to find anther optimal value
+- you can hit enter when the model is training and the model will be saved and the training will be saved , and it will resume from that stage whenever you continue to train it.
+- the number of iterations that will make the result video look good will depepend on the specific videos , but the longer the model is trained the better.
+
+# Converting
+
+to convert the result from the above training into a video use:
+```
+python faceswap.py convert --input-dir [location to the lipsynced video]  --output-dir [location to the output folder] --model-dir [location to the model folder] --color-adjustment match-hist --writer ffmpeg
+
+```
+you can upscale the resulting video by adding `--output-scale 200` which will double the resolution. 
+
+
